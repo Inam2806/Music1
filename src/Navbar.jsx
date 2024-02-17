@@ -13,7 +13,7 @@ const NavBar = () => {
     <div href="#" class="nav-item"><strong>Contact</strong></div>
     <div class="nav-item">
        <Link to='/'  rel='noopener noreferrer'>
-        <a>Home</a>
+        <a href='ssf'>Home</a>
               </Link>
           </div>
         

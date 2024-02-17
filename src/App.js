@@ -12,7 +12,7 @@ import NavBar from "./Navbar";
 
 import './styles/Home.scss';
 import Aside from "./aside";
-import Adele from "./Adele";
+import ArtistSongs from "./ArtistSongs";
 
 import Search from "./Search";
 import audio1 from './Song/Akon - Smack That  ft. Eminem.mp3';
@@ -185,7 +185,8 @@ const handlePlaybackToggle = (index) => {
                 <Route path="/" element={<Home isSidebarOpen={isSidebarOpen} audioSources={audioSources} handlePlaybackToggle={handlePlaybackToggle} />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/Signup" element={<Signup />} />               
-                 <Route path="/Adele" element={<Adele audioSources={audioSources}  handlePlaybackToggle={handlePlaybackToggle} isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentIndex={currentIndex} isSidebarOpen={isSidebarOpen}/>}/>
+                <Route path="/Adele" element={<ArtistSongs artist="Adele" audioSources={audioSources} handlePlaybackToggle={handlePlaybackToggle} isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentIndex={currentIndex} isSidebarOpen={isSidebarOpen} />} />
+                <Route path="/Jason Derulo" element={<ArtistSongs artist="Jason Derulo" audioSources={audioSources}  handlePlaybackToggle={handlePlaybackToggle} isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentIndex={currentIndex} isSidebarOpen={isSidebarOpen}/>}/>
                 </Routes>
                <Aside isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
          <Mainplayer
