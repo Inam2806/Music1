@@ -1,0 +1,84 @@
+.bottom2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .videoicons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        i {
+            cursor: pointer;
+            margin: 0 10px;
+            color: white;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        #masterPlay {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        #previous,
+        #next {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        #volumeBar {
+            width: 80px;
+            margin-left: 10px;
+        }
+    }
+
+    .additionalButtons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        button {
+            cursor: pointer;
+            margin: 0 10px;
+            color: white;
+            background-color: #333;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .speedOptions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+
+            button {
+                margin: 5px;
+            }
+        }
+    }
+
+    #myProgressBar {
+        width: 400px;
+        min-width: initial;
+        max-width: initial;
+        margin-top: 10px;
+    }
+
+    span {
+        color: white;
+        margin-top: 10px;
+    }
+}

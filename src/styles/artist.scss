@@ -1,0 +1,85 @@
+.home1 {
+    h1 {
+        color: white;
+    }
+
+    margin-bottom: 200px;
+
+    .songList {
+        display: flex;
+        margin: 23px auto;
+        width: 70%;
+        max-width: 100%;
+        border-radius: 12px;
+        padding: 34px;
+        background-image: url('../images/Song/adele/adele.jpg');
+        background-size: cover;
+        background-position: center;
+
+        .item {
+            width: 700px;
+            border-style: double;
+            display: flex;
+            color: rgb(255, 255, 255);
+            margin: 12px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 34px;
+            backdrop-filter: blur(10px);
+            /* Add the blur effect here */
+
+            .info {
+                display: flex;
+                align-items: center;
+
+                img {
+                    max-width: 100px;
+                    margin-right: 16px;
+                    border-radius: 8px;
+                }
+
+                .details {
+                    h4 {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+
+            .actions1 {
+                .icon1 {
+                    display: flex;
+                    align-items: center;
+                    color: black;
+
+                    i {
+                        font-size: 24px;
+                        cursor: pointer;
+                        margin-right: 12px;
+                        border-radius: 50%;
+                        /* Add border-radius to make it circular */
+                        background-color: white;
+                        /* Set background color */
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 40px;
+                        /* Set height and width for the circle */
+                        width: 40px;
+
+                        &:hover {
+                            background-color: lightgray;
+                            /* Change background color on hover */
+                        }
+                    }
+                }
+            }
+
+            // Media query for mobile devices
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+
+  
+}

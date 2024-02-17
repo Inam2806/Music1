@@ -1,0 +1,98 @@
+.bottom1-open{
+    max-width: 80%;   
+ 
+    left: 20%; 
+
+}
+.bottom-open {
+    max-width: 80%;
+
+    left: 20%;
+
+}
+.bottom1 {
+    position: fixed;
+    bottom: 0;
+    height: 140px;
+    background-color: rgb(68, 67, 67);
+    color: white;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 200;
+
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    background-color: rgb(68, 67, 67);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 200;
+    margin-bottom: 10px;
+
+    .fa-step-backward,
+    .fa-play-circle,
+    .fa-step-forward {
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .fa-step-backward {
+        right: 40%;
+    }
+
+    .fa-play-circle {
+        margin: 0 20px;
+    }
+
+    .fa-step-forward {
+        left: 40%;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .fa-step-backward,
+        .fa-play-circle,
+        .fa-step-forward {
+            font-size: 18px;
+        }
+
+        .fa-step-backward {
+            right: 15%;
+        }
+
+        .fa-play-circle {
+            margin: 0;
+        }
+
+        .fa-step-forward {
+            left: 15%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+
+        .fa-step-backward,
+        .fa-play-circle,
+        .fa-step-forward {
+            font-size: 16px;
+        }
+
+        .fa-step-backward,
+        .fa-play-circle,
+        .fa-step-forward {
+            position: static;
+            /* Reset position for mobile */
+            margin: 5px;
+            /* Add margin for better spacing */
+        }
+    }
+}

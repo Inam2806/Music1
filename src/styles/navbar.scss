@@ -1,0 +1,70 @@
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;  
+}
+
+
+.navbar {
+    background-color: #1a1a1a;
+    /* Dark background color */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    border-radius: 10px;
+    margin-top: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ 
+}
+
+
+.nav-item {
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            
+        color: #ff0000;
+            
+        }
+    }
+
+}
+
+/* Add hover effect to navbar items */
+.nav-item:hover {
+    background-color: #555;
+}
+
+
+
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    /* Line thickness */
+    width: 0;
+    background-color: #ff0000;
+    /* Red color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}
+
