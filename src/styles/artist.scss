@@ -12,7 +12,6 @@
         max-width: 100%;
         border-radius: 12px;
         padding: 34px;
-        background-image: url('../images/Song/adele/adele.jpg');
         background-size: cover;
         background-position: center;
 
@@ -20,12 +19,12 @@
             width: 700px;
             border-style: double;
             display: flex;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             margin: 12px 0;
             justify-content: space-between;
             align-items: center;
             border-radius: 34px;
-            backdrop-filter: blur(10px);
+            background: black;
             /* Add the blur effect here */
 
             .info {
@@ -81,5 +80,55 @@
         }
     }
 
-  
+
+}
+
+.songList {
+    &.Adele {
+        background-image: url('../images/Song/adele/adele.jpg');
+    }
+
+    &.Jason{
+        background-image: url('../images/Song/Jason Derulo/Jason.jpg');
+    }
+
+    &.Selena {
+        background-image: url('../images/Song/Selena Gomez/Selena Gomez.jpg');
+    }
+
+    &.Dj {
+        background-image: url('../images/Song/Dj snake/DJ-Snake.jpg');
+    }
+
+    &.Alan {
+        background-image: url('../images/Song/alan/alan.jpg');
+    }
+
+    &.Maroon {
+        background-image: url('../images/Song//maroon/1.jpg');
+
+
+    }
+
+    &.Balvin {
+        background-image: url('../images/Song/balvin/1.jpg');
+
+        h1 {
+            color: black;
+        }
+    }
+
+    &.Calvin-harris {
+        background-image: url('../images/Song/calvin/1.jpg');
+    }
+ &.Atif-aslam {
+     background-image: url('../images/Song/Atif Aslam/Atif aslam.jpg');
+ }
+ &.Arijit-singh {
+     background-image: url('../images/Song/Arijit Singh/Arijit Singh.jpg');
+ }
+
+      
+
+
 }

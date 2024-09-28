@@ -1,27 +1,31 @@
-// NavBar.jsx
-
 import React from 'react';
-
 import './styles/style.scss';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './styles/navbar.scss';
+
 const NavBar = () => {
     return (
         <div>
-          <div class="navbar">
-    <div href="#" class="nav-item"><strong>About</strong></div>
-    <div href="#" class="nav-item"><strong>Contact</strong></div>
-    <div class="nav-item">
-       <Link to='/'  rel='noopener noreferrer'>
-        <a href='ssf'>Home</a>
-              </Link>
-          </div>
-        
-</div>
-  </div>
+            <div className="navbar">
+            <div className="nav-item">
+                    <Link to='/' rel='noopener noreferrer'>
+                        Home
+                    </Link>
+                </div>
+                <div className="nav-item">
+                    <Link to='/About' rel='noopener noreferrer'>
+                        About
+                    </Link>
+                </div>
+                <div className="nav-item">
+                    <Link to='/Contact' rel='noopener noreferrer'>
+                        Contact
+                    </Link>
+                </div>
+                
+            </div>
+        </div>
     );
 };
 
 export default NavBar;
-
-

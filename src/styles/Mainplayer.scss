@@ -1,6 +1,5 @@
 .bottom1-open{
     max-width: 80%;   
- 
     left: 20%; 
 
 }
@@ -13,7 +12,7 @@
 .bottom1 {
     position: fixed;
     bottom: 0;
-    height: 140px;
+    height: 100px;
     background-color: rgb(68, 67, 67);
     color: white;
     display: flex;
@@ -44,7 +43,15 @@
         cursor: pointer;
         position: relative;
     }
-
+        .fa-volume-mute {
+            left: 70%;
+            position: relative;
+        }
+    
+        .fa-volume-up {
+            left: 70%;
+            position: relative;
+        }
     .fa-step-backward {
         right: 40%;
     }

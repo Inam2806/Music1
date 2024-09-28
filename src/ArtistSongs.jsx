@@ -5,11 +5,11 @@ import './styles/artist.scss';
 
 const ArtistSongs = ({ artist, audioSources, isPlaying, setIsPlaying, handlePlaybackToggle, currentIndex, isSidebarOpen }) => {
   let songNumber = 0;
-
+  const artistName = artist.split(' ')[0];
   return (
     <div className={`home1 ${isSidebarOpen ? 'home-sidebar-open' : ''}`}>
       <div className="container">
-        <div className="songList">
+        <div className={`songList ${artistName}`}>
           <ul>
             <h1>{`${artist} Songs`}</h1>
             {audioSources.map((song, index) => (
